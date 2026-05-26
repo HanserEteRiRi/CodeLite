@@ -43,6 +43,3 @@ CodeLite reads configuration from `~/.code-lite/settings.json`, falling back to 
 }
 ```
 
-## License
-
-MIT
