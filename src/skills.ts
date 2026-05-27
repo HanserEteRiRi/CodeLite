@@ -61,6 +61,14 @@ function getSkillRoots(cwd: string): SkillSourceRoot[] {
       source: 'user',
     },
     {
+      root: path.join(cwd, '.mini-code', 'skills'),
+      source: 'compat_project',
+    },
+    {
+      root: path.join(os.homedir(), '.mini-code', 'skills'),
+      source: 'compat_user',
+    },
+    {
       root: path.join(cwd, '.claude', 'skills'),
       source: 'compat_project',
     },

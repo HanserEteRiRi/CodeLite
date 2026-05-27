@@ -188,7 +188,7 @@ export async function tryHandleLocalCommand(
   if (input === '/skills') {
     const skills = context?.tools?.getSkills() ?? []
     if (skills.length === 0) {
-      return 'No skills discovered. Add skills under ~/.code-lite/skills/<name>/SKILL.md, .code-lite/skills/<name>/SKILL.md, .claude/skills/<name>/SKILL.md, or ~/.claude/skills/<name>/SKILL.md.'
+      return 'No skills discovered. Add skills under .code-lite/skills/<name>/SKILL.md (project), ~/.code-lite/skills/<name>/SKILL.md (user), .mini-code/skills/<name>/SKILL.md (legacy), or .claude/skills/<name>/SKILL.md (compat).'
     }
 
     return skills
